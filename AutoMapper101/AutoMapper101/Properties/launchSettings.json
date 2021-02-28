@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "AutoMapper101": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:80/hc/"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
