@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper101", "AutoMapper101\AutoMapper101.csproj", "{15A0F3C6-0A29-4E46-A899-C934E4530770}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoMapper101", "AutoMapper101\AutoMapper101.csproj", "{15A0F3C6-0A29-4E46-A899-C934E4530770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper101.UnitTest", "AutoMapper101.UnitTest\AutoMapper101.UnitTest.csproj", "{BF45B87B-B3CF-47DC-86E2-E37810C67ED8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B29538E-3E91-4BD5-80F9-5D235EA31328}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.workflows", "01.workflows", "{B04E1BEE-95AF-45AE-8DE8-606EF3757EA1}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.UnitTest", "01.UnitTest", "{4268A4F2-741B-479D-BDDE-19DB10A8A338}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D55B96DB-A379-4C6A-958E-FF9E7A5D571E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMApper101.Application", "AutoMApper101.Application\AutoMApper101.Application.csproj", "{38EFFF9D-3E04-41E6-B2E7-D253CF039AC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +33,24 @@ Global
 		{15A0F3C6-0A29-4E46-A899-C934E4530770}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A0F3C6-0A29-4E46-A899-C934E4530770}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A0F3C6-0A29-4E46-A899-C934E4530770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF45B87B-B3CF-47DC-86E2-E37810C67ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF45B87B-B3CF-47DC-86E2-E37810C67ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF45B87B-B3CF-47DC-86E2-E37810C67ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF45B87B-B3CF-47DC-86E2-E37810C67ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38EFFF9D-3E04-41E6-B2E7-D253CF039AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EFFF9D-3E04-41E6-B2E7-D253CF039AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EFFF9D-3E04-41E6-B2E7-D253CF039AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EFFF9D-3E04-41E6-B2E7-D253CF039AC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15A0F3C6-0A29-4E46-A899-C934E4530770} = {3B29538E-3E91-4BD5-80F9-5D235EA31328}
+		{BF45B87B-B3CF-47DC-86E2-E37810C67ED8} = {4268A4F2-741B-479D-BDDE-19DB10A8A338}
+		{B04E1BEE-95AF-45AE-8DE8-606EF3757EA1} = {3B29538E-3E91-4BD5-80F9-5D235EA31328}
+		{4268A4F2-741B-479D-BDDE-19DB10A8A338} = {D55B96DB-A379-4C6A-958E-FF9E7A5D571E}
+		{38EFFF9D-3E04-41E6-B2E7-D253CF039AC2} = {3B29538E-3E91-4BD5-80F9-5D235EA31328}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B82489E-C18B-48F7-9484-5A6F0B9D18D6}
