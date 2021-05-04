@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using AutoMApper101.Application.Commands;
 using HealthChecks.UI.Client;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Configuration;
@@ -44,6 +46,8 @@ namespace AutoMapper101
         public virtual IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services
+                .AddMediatR(typeof(DoMappingCommandHandler))
+                .AddAutoMapper(typeof(MapperProfile))
                 .AddApplicationInsights(Configuration)
                 .AddCustomHealthCheck(Configuration)
                 //.Configure<BackgroundTaskSettings>(this.Configuration)
